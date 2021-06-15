@@ -1,0 +1,87 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun May 16 19:47:21 2021
+| Host         : DESKTOP-LDIMMOC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file game_control_sets_placed.rpt
+| Design       : game
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    73 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              67 |           46 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             101 |           30 |
+| Yes          | No                    | No                     |              20 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              59 |           22 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------+--------------------+------------------+----------------+
+|      Clock Signal     |  Enable Signal  |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++-----------------------+-----------------+--------------------+------------------+----------------+
+|  cnt_down_reg_i_2_n_0 |                 |                    |                1 |              1 |
+|  clk50MHz_BUFG        |                 |                    |                1 |              1 |
+|  red_reg[3]_i_2_n_0   |                 | red_reg[3]_i_3_n_0 |                2 |              3 |
+|  clk4_reg_n_0_BUFG    | bc2[3]_i_2_n_0  | bc2[3]_i_1_n_0     |                1 |              4 |
+|  clk4_reg_n_0_BUFG    | bmcf[3]_i_1_n_0 |                    |                2 |              4 |
+|  clk4_reg_n_0_BUFG    | btof[3]_i_1_n_0 |                    |                4 |              4 |
+|  clk4_reg_n_0_BUFG    | d[4][3]_i_1_n_0 |                    |                3 |              4 |
+|  clk4_reg_n_0_BUFG    | d[5][3]_i_2_n_0 | d[5][3]_i_1_n_0    |                2 |              4 |
+|  clk4_reg_n_0_BUFG    | rmcf[3]_i_1_n_0 |                    |                2 |              4 |
+|  clk4_reg_n_0_BUFG    | rtof[3]_i_1_n_0 |                    |                4 |              4 |
+|  clk4_reg_n_0_BUFG    | td[3]_i_1_n_0   | td                 |                1 |              4 |
+|  clk4_reg_n_0_BUFG    |                 | td                 |                4 |              5 |
+|  clk100MHz_IBUF_BUFG  |                 |                    |                5 |              5 |
+|  clk100_reg_n_0       |                 |                    |                1 |              5 |
+|  clk4_reg_n_0_BUFG    | b[2][3]_i_2_n_0 | b[2][3]_i_1_n_0    |                4 |              6 |
+|  clk4_reg_n_0_BUFG    | d[2][3]_i_2_n_0 | d[2][3]_i_1_n_0    |                5 |              9 |
+|  clk100MHz_IBUF_BUFG  |                 | clk4               |                8 |             31 |
+|  clk100MHz_IBUF_BUFG  |                 | clk100             |                8 |             31 |
+|  clk50MHz_BUFG        |                 | vcount             |                8 |             31 |
+|  clk50MHz_BUFG        | vcount          | vcount[31]_i_1_n_0 |                9 |             32 |
+|  clk4_reg_n_0_BUFG    |                 |                    |               38 |             55 |
++-----------------------+-----------------+--------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 3      |                     1 |
+| 4      |                     8 |
+| 5      |                     3 |
+| 6      |                     1 |
+| 9      |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+

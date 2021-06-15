@@ -1,0 +1,63 @@
+if n1 = '1' and n2 = '1' and n3 = '1' then
+    if r = 8 then    
+       if b1 = 2 then
+          b1 <= 5;
+       else
+        if b2 = 2 then
+           b2 <= 5;
+        else
+            if b3 = 2 then
+               b3 <= 2;
+            end if;
+        end if;
+    end if;              
+    end if;
+end if;
+
+if n7 = '1' and n5 = '1' and n6 = '1' then
+    if r = 10 then
+       if b1 = 5 then
+        b1 <= 9;
+        else
+        if b2 = 5 then
+            b2 <= 9;
+            else
+            if b3 = 5 then
+                b3 <= 9;
+            end if;
+        end if;
+        end if;         
+    end if;    
+end if;
+
+if n1 = '1' and n3 = '1' and n4 = '1' then
+if r = 9 then
+     if b1 = 1 then
+     b1 <= 5;
+     else
+     if b2 = 1 then
+         b2 <= 5;
+         else
+         if b3 = 1 then
+             b3 <= 5;
+         end if;
+     end if;
+     end if;     
+    end if;
+end if;
+
+if n7 = '1' and n2 = '1' and n6 = '1' then
+    if r = 10 then
+     if b1 = 6 then
+     b1 <= 9;
+     else
+     if b2 = 6 then
+         b2 <= 9;
+         else
+         if b3 = 6 then
+             b3 <= 9;
+         end if;
+     end if;
+     end if;     
+    end if;
+end if;
